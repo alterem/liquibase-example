@@ -58,6 +58,21 @@
                     <includeSystemScope>true</includeSystemScope>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.liquibase</groupId>
+                <artifactId>liquibase-maven-plugin</artifactId>
+                <configuration>
+                    <propertyFileWillOverride>true</propertyFileWillOverride>
+                    <outputChangeLogFile>${basedir}/src/main/resources/temp-changelog.xml</outputChangeLogFile>
+                    <driver>com.mysql.cj.jdbc.Driver</driver>
+                    <url>jdbc:mysql://112.74.192.133:33666/liquibase?useUnicode=true;characterEncoding=utf8;useSSL=true;useJDBCCompliantTimezoneShift=true;nullCatalogMeansCurrent=true;useLegacyDatetimeCode=false;serverTimezone=Asia/Shanghai</url>
+                    <username>test</username>
+                    <password>Test123456.</password>
+                    <outputFileEncoding>UTF-8</outputFileEncoding>
+                    <verbose>true</verbose>
+                    <diffTypes>tables, views, columns, indexs,foreignkeys, primarykeys, uniqueconstraints, data</diffTypes>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 

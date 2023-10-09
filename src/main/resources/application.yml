@@ -5,9 +5,9 @@ logging:
     com.baomidou: debug
 spring:
   datasource:
-    url: jdbc:mysql://112.74.192.133:33666/root?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
-    username: root
-    password: Root0911.
+    url: jdbc:mysql://112.74.192.133:33666/liquibase?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+    username: test
+    password: Test123456.
     driver-class-name: com.mysql.cj.jdbc.Driver
   liquibase:
     enabled: true
