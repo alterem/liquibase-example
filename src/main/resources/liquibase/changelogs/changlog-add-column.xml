@@ -8,7 +8,7 @@
 
     <changeSet author="stiles" id="20210330-2" >
         <addColumn  tableName="department">
-            <column name="company"  type="VARCHAR(100)"></column>
+            <column name="company"  type="VARCHAR(100)" />
         </addColumn>
     </changeSet>
 

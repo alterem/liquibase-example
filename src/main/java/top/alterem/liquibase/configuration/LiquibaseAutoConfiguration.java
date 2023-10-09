@@ -19,7 +19,7 @@ public class LiquibaseAutoConfiguration {
     public SpringLiquibase liquibase(DataSource dataSource, LiquibaseProperties liquibaseProperties) {
         SpringLiquibase liquibase = new SpringLiquibase();
         liquibase.setDataSource(dataSource);
-        //制定changelog的位置，这里使用的一个master文件引用其他文件的方式
+        // 指定changelog的位置，这里使用的一个master文件引用其他文件的方式
         liquibase.setChangeLog(liquibaseProperties.getChangeLog());
         liquibase.setContexts(liquibaseProperties.getContexts());
         liquibase.setDefaultSchema(liquibaseProperties.getDefaultSchema());
