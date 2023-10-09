@@ -1,0 +1,13 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <!--<include file="liquibase/changelogs/changlog-create-table.xml" />
+    <includeAll path="liquibase/changelogs/" relativeToChangelogFile="false"/>-->
+
+    <include file="classpath:liquibase/changelogs/DDL/20220818_ddl_init_table.sql" relativeToChangelogFile="false" />
+    <include file="classpath:liquibase/changelogs/DML/20220818_dml_init_data.sql" relativeToChangelogFile="false" />
+
+</databaseChangeLog>
